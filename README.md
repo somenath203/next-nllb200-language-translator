@@ -1,6 +1,6 @@
 # NextNLLB200 Language Translator
 
-Welcome to the NextNLLB200 Language Translator. This application allows you to translate text between over 50 languages using the powerful NLLB-200 model by Meta. Built with modern technologies such as Next.js, Tailwind CSS, ShadCN UI, and FastAPI, this web app provides a seamless and efficient translation experience.
+Welcome to the NextNLLB200 Language Translator. This application allows you to translate text between over 50 languages using the powerful NLLB-200 model by Meta. Built with modern technologies such as Next.js, Tailwind CSS, ShadcnUI, and FastAPI, this web app provides a seamless and efficient translation experience.
 
 ## Tech Stack Used
 
