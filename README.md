@@ -88,3 +88,7 @@ https://language-translator-nllb-200-nextjs.vercel.app/
 
 https://github.com/user-attachments/assets/51a442c9-c851-4bab-853e-03ca3cf3aaad
 
+## Disclaimer
+
+The creator of this application is not responsible for any inaccuracies or errors in translations, as the NLLB-200 model's functioning is beyond the creator's control.
+
