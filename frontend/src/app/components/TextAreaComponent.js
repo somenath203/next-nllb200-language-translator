@@ -1,15 +1,12 @@
 'use client';
 
-import { useState } from "react";
 import { MdContentCopy } from "react-icons/md";
 import { toast } from "react-toastify";
 
 import { Textarea } from "@/components/ui/textarea";
 
 
-const TextAreaComponent = ({ isReadOnly, setInputText, resultantTranslatedText, isWordCountLimitHit, setIsWordCountLimitHit }) => {
-
-  const [wordCount, setWordCount] = useState(0);
+const TextAreaComponent = ({ isReadOnly, setInputText, wordCount, setWordCount, resultantTranslatedText }) => {
 
   const wordLimit = 100;
 
@@ -28,13 +25,9 @@ const TextAreaComponent = ({ isReadOnly, setInputText, resultantTranslatedText, 
 
       setWordCount(wordCount);
 
-      setIsWordCountLimitHit(false);
-
     } else {
 
-      setWordCount(100);
-
-      setIsWordCountLimitHit(true);
+      setWordCount(wordCount);
 
     }
 
@@ -93,9 +86,9 @@ const TextAreaComponent = ({ isReadOnly, setInputText, resultantTranslatedText, 
 
           <p>{wordCount} / 100</p>
 
-          {isWordCountLimitHit && (
+          {wordCount > 100 ? (
             <p className="text-red-500 font-bold">Maximum Word Limit Reached. Please remove some words to make the submit button visible.</p>
-          )}
+          ) : <></>}
 
         </div>
       )}
