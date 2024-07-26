@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { ImSpinner2 } from 'react-icons/im';
 import axios from 'axios';
-
+import { toast } from 'react-toastify';
 
 import { Button } from '@/components/ui/button';
 
@@ -77,9 +77,7 @@ const page = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const [isWordCountLimitHit, setIsWordCountLimitHit] = useState(false);
-
-  const [errorMessage, setErrorMessage] = useState('');
+  const [wordCount, setWordCount] = useState(0);
 
 
   const onSendDataToBackend = async () => {
@@ -112,7 +110,15 @@ const page = () => {
 
       console.log(error);
 
-      setErrorMessage(error?.message);
+      toast.error('Something went wrong. Please try again after sometime.', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "light",
+      });
 
     } finally {
 
@@ -121,6 +127,8 @@ const page = () => {
     }
 
   };
+
+  console.log(wordCount > 100 ? "don't display button" : "display button");
 
   return (
     <div className="min-h-screen flex flex-col items-center gap-5 bg-gradient-to-t from-orange-100 to-white">
@@ -143,35 +151,31 @@ const page = () => {
           <TextAreaComponent
             isReadOnly={false}
             setInputText={setInputText}
-            isWordCountLimitHit={isWordCountLimitHit}
-            setIsWordCountLimitHit={setIsWordCountLimitHit}
+            wordCount={wordCount}
+            setWordCount={setWordCount}
           />
 
           <div className="flex flex-col gap-3">
 
-          {!isWordCountLimitHit ? (
 
-              <>
-                {!loading ? (
-                  <Button
-                    variant="outline"
-                    className="transition-all duration-200 !bg-orange-200 text-black h-12 border-2 border-solid border-black text-lg tracking-wider disabled:!bg-gray-200"
-                    onClick={onSendDataToBackend}
-                    disabled={
-                      !inputText || !sourceLanguageInput || !targetLanguageInput
-                    }
-                  >
-                    Translate
-                  </Button>
-                ) : (
-                  <div className="w-full flex items-center justify-center">
-                    <ImSpinner2 className="text-4xl text-orange-600 transition-all animate-spin" />
-                  </div>
-                )}
-              </>
-            ) : (
-              <></>
-            )}
+            {wordCount > 100 ? <></> : <>
+              {!loading ? (
+                <Button
+                  variant="outline"
+                  className="transition-all duration-200 !bg-orange-200 text-black h-12 border-2 border-solid border-black text-lg tracking-wider disabled:!bg-gray-200"
+                  onClick={onSendDataToBackend}
+                  disabled={
+                    !inputText || !sourceLanguageInput || !targetLanguageInput
+                  }
+                >
+                  Translate
+                </Button>
+              ) : (
+                <div className="w-full flex items-center justify-center">
+                  <ImSpinner2 className="text-4xl text-orange-600 transition-all animate-spin" />
+                </div>
+              )}
+            </>}
 
           </div>
 
@@ -186,13 +190,10 @@ const page = () => {
             setLanguageSelectInput={setTargetLanguageInput}
           />
 
-          {errorMessage ? <TextAreaComponent
-            isReadOnly={true}
-            resultantTranslatedText={errorMessage}
-          /> : <TextAreaComponent
+          <TextAreaComponent
             isReadOnly={true}
             resultantTranslatedText={resultantText}
-          />}
+          />
 
         </div>
 
