@@ -7,7 +7,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Language Translator NLLB-200",
+  title: "NextNLLB Translator",
   description: "This is a language translator app created with the help of Meta's NLLB-200 model.",
 };
 
