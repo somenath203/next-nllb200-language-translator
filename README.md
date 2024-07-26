@@ -80,5 +80,7 @@ This application supports translation for the following 50 languages:
 2. Select the source and target languages from the dropdown menus.
 3. Click the "Translate" button to see the translated text.
 
-## Demo Video
+## Demo Video of the application
+
+https://github.com/user-attachments/assets/51a442c9-c851-4bab-853e-03ca3cf3aaad
 
