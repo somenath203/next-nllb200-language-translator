@@ -134,7 +134,7 @@ const page = () => {
     <div className="min-h-screen flex flex-col items-center gap-5 bg-gradient-to-t from-orange-100 to-white">
       
       <p className="text-lg lg:text-2xl text-center mt-28 text-orange-500 tracking-wider font-bold">
-        NextNLLB200 Translator
+        NextNLLB200 Language Translator
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-11/12 mb-20">
