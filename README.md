@@ -272,9 +272,11 @@ async def translate_text(allInput: LanguageTextModel):
         }
 ```
 
-## Live Preview
+## Deployment Links
 
-https://language-translator-nllb-200-nextjs.vercel.app/
+01) Live Preview: https://language-translator-nllb-200-nextjs.vercel.app/
+02) Backend FastAPI API of the NLLB-200: https://som11-language-translator.hf.space/
+03) Swagger docs of the FastAPI API of the NLLB-200: https://som11-language-translator.hf.space/docs
 
 ## Demo video of the application
 
