@@ -84,7 +84,7 @@ This application supports translation for the following 50 languages:
 
 https://language-translator-nllb-200-nextjs.vercel.app/
 
-## Demo Video of the application
+## Demo video of the application
 
 https://github.com/user-attachments/assets/51a442c9-c851-4bab-853e-03ca3cf3aaad
 
