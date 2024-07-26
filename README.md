@@ -8,7 +8,7 @@ Welcome to the Language Translator Web App! This application allows you to trans
 - **Tailwind CSS**: A utility-first CSS framework for styling the application.
 - **ShadCN UI**: A component library to create consistent and customizable UI elements.
 - **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python.
-- **Meta's NLLB-200 Model**: A state-of-the-art language model that supports translation between 200 languages.
+- **Meta's NLLB-200 Model**: A state-of-the-art language model that supports translation between 200 languages (Note: This application utilizes 50 languages out of the 200 supported by the NLLB-200 model.).
 
 ## Supported Languages
 
