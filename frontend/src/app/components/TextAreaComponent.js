@@ -92,7 +92,7 @@ const TextAreaComponent = ({ isReadOnly, setInputText, resultantTranslatedText, 
           <p>{wordCount} / 100</p>
 
           {isWordCountLimitHit && (
-            <p className="text-red-500 font-bold">Maximum Word Limit Reached. Please remove some words to make thesubmit button visible.</p>
+            <p className="text-red-500 font-bold">Maximum Word Limit Reached. Please remove some words to make the submit button visible.</p>
           )}
 
         </div>
