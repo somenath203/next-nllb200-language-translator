@@ -32,6 +32,8 @@ const TextAreaComponent = ({ isReadOnly, setInputText, resultantTranslatedText, 
 
     } else {
 
+      setWordCount(100);
+
       setIsWordCountLimitHit(true);
 
     }
