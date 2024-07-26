@@ -1,5 +1,84 @@
-# Next NLLB Translator
+# NextNLLB200 Translator
 
-Welcome to the NLLB Translator Hub. This is a language translation tool used to deliver seamless and accurate translations. This project combines the power of ShadCN, NextJS, FastAPI, 
-and Meta's NLLB-200 model to provide a robust and efficient translation service.
+Welcome to the Language Translator Web App! This application allows you to translate text between over 50 languages using the powerful NLLB-200 model by Meta. Built with modern technologies such as Next.js, Tailwind CSS, ShadCN UI, and FastAPI, this web app provides a seamless and efficient translation experience.
+
+## Tech Stack Used
+
+- **Next.js**: A React framework that enables server-side rendering and static site generation.
+- **Tailwind CSS**: A utility-first CSS framework for styling the application.
+- **ShadCN UI**: A component library to create consistent and customizable UI elements.
+- **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python 3.6+.
+- **Meta's NLLB-200 Model**: A state-of-the-art language model that supports translation between 50 languages.
+
+## Supported Languages
+
+This application supports translation for the following 50 languages:
+
+- English
+- Hindi
+- Bengali
+- Bhojpuri
+- Urdu
+- Tamil
+- Telugu
+- Malayalam
+- Spanish
+- French
+- German
+- Chinese (Simplified)
+- Russian
+- Portuguese
+- Japanese
+- Korean
+- Italian
+- Dutch
+- Greek
+- Polish
+- Turkish
+- Swedish
+- Danish
+- Finnish
+- Hungarian
+- Czech
+- Norwegian Bokmål
+- Romanian
+- Slovak
+- Croatian
+- Bulgarian
+- Ukrainian
+- Serbian
+- Hebrew
+- Arabic
+- Thai
+- Vietnamese
+- Indonesian
+- Malay
+- Filipino
+- Swahili
+- Amharic
+- Somali
+- Hausa
+- Yoruba
+- Zulu
+- Xhosa
+- Igbo
+- Uzbek
+- Kazakh
+
+## Features
+
+- **Fast and Accurate Translations**: Utilizes Meta's NLLB-200 model for high-quality translations.
+- **User-Friendly Interface**: Built with ShadCN UI and Tailwind CSS for a clean and responsive design.
+- **API Integration**: FastAPI seamlessly connects the backend translation model with the frontend interface.
+- **Language Support**: Translate text in over 50 languages.
+- **Word Limit**: The text area on the frontend supports up to 100 words for translation.
+- **Copy to Clipboard**: User can copy the translated text to clipboard.
+
+## How to Use
+
+1. Enter the text you want to translate in the text area (maximum 100 words).
+2. Select the source and target languages from the dropdown menus.
+3. Click the "Translate" button to see the translated text.
+
+## Demo Video
 
