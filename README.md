@@ -6,7 +6,7 @@ Welcome to the NextNLLB200 Language Translator. This application allows you to t
 
 - **Next.js**: A React framework that enables server-side rendering and static site generation.
 - **Tailwind CSS**: A utility-first CSS framework for styling the application.
-- **ShadCN UI**: A component library to create consistent and customizable UI elements.
+- **ShadcnUI**: A component library to create consistent and customizable UI elements.
 - **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python.
 - **Meta's NLLB-200 Model**: A state-of-the-art language model that supports translation between 200 languages (Note: This application utilizes 50 languages out of the 200 supported by the NLLB-200 model.).
 
