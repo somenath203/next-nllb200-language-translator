@@ -7,8 +7,8 @@ Welcome to the Language Translator Web App! This application allows you to trans
 - **Next.js**: A React framework that enables server-side rendering and static site generation.
 - **Tailwind CSS**: A utility-first CSS framework for styling the application.
 - **ShadCN UI**: A component library to create consistent and customizable UI elements.
-- **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python 3.6+.
-- **Meta's NLLB-200 Model**: A state-of-the-art language model that supports translation between 50 languages.
+- **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python.
+- **Meta's NLLB-200 Model**: A state-of-the-art language model that supports translation between 200 languages.
 
 ## Supported Languages
 
